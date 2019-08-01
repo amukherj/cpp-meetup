@@ -1,0 +1,21 @@
+namespace Meetup.Address;
+
+table Address {
+  apartment:string;
+  building:string;
+  streetAddress:string;
+  area:string;
+  landmark:string;
+  city:string;
+  country:string;
+  postalCode:string;
+}
+
+table Person {
+  name:string;
+  age:int;
+  addresses:[Address];
+  phones:[string];
+}
+
+root_type Person;
